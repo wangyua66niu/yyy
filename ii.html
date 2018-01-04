@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/animate.css"/>
+		<style type="text/css">
+			div{position: relative;}
+			p{width: 100px;height:100px;background: red;position: absolute;
+			
+			}
+			.pp:hover{transform: rotate(90deg);transition: all 2s;}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<p>ss</p>
+		</div>
+	</body>
+	<script src="bootstrap/js/jquery-3.1.1.min.js"></script>
+	<script>
+		$("div").hover(function(){
+	$(this).children().attr({"class":"pp"})
+
+		},function(){
+//			$(this).children().removerAttr("class")
+		})
+		</script>
+</html>
